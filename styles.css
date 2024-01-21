@@ -28,7 +28,7 @@ body {
 }
 
 .title-info {
-    text-align: left;
+    text-align: center; /* Center the title and description */
 }
 
 .title-text {
@@ -58,6 +58,23 @@ header {
     border-radius: 8px;
     padding: 15px;
     box-sizing: border-box;
+    text-align: center; /* Center the content */
+}
+
+.serverstatus-box {
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    background-color: #1f1f1f;
+    border: 1px solid #464646;
+    border-radius: 8px;
+    margin-right: auto; /* Auto margin on both sides to center */
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .box-container {
@@ -72,11 +89,13 @@ header {
     background-color: #1f1f1f;
     border: 1px solid #464646;
     border-radius: 8px;
-    margin-right: 10px;
+    margin-right: auto; /* Auto margin on both sides to center */
+    margin-left: auto;
     margin-bottom: 10px;
     margin-top: 20px;
     padding: 15px;
     box-sizing: border-box;
+    text-align: center; /* Center the title and status text */
 }
 
 .box-header {
@@ -95,6 +114,11 @@ header {
 .status {
     font-size: 0.9em;
     padding-bottom: 10px;
+}
+
+.update {
+    border-color: #7c90e4;
+    color: #7c90e4;
 }
 
 .resolved {
@@ -128,3 +152,39 @@ footer {
     color: #888888;
     margin: 0;
 }
+
+/* Add this CSS to create a divider */
+.divider {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    display: inline-block;
+    width: 45%; /* Adjust the width of the lines */
+    border-top: 1px solid #aaaaaa; /* Color of the divider line */
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    right: 5%;
+}
+
+.divider::after {
+    left: 5%;
+}
+
+.divider-text {
+    display: inline-block;
+    padding: 0 10px; /* Adjust padding as needed */
+    background-color: #111111; /* Background color of the divider text */
+    color: #aaaaaa; /* Color of the divider text */
+    position: relative;
+    z-index: 1; /* Bring the text to the front */
+}
+
