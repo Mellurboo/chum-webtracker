@@ -43,6 +43,10 @@ body {
     margin: 0;
 }
 
+a {
+    color: #46769f;
+}
+
 header {
     margin-bottom: 20px;
 }
