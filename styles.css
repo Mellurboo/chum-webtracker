@@ -81,7 +81,7 @@ header {
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 1px 4px rgba(93, 209, 61, 0.798);
+    box-shadow: 0 1px 4px rgba(209, 61, 61, 0.798);
 }
 
 .box-container {
